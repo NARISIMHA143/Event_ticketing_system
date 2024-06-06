@@ -90,16 +90,18 @@ body {
 }
 
 .card {
-    -webkit-appearance: none;
-  -moz-appearance: none; /* For Firefox */
-  appearance: none;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 1rem;
     text-align: center;
-    width: 30%;
+    width: calc(100% - 2rem); /* To account for padding */
+    margin: 0 1rem; /* Adding margin for padding effect */
+    box-sizing: border-box; /* Ensures padding and margin are included in the width calculation */
 }
+
+
+
 
 footer {
     background-color: #343a40;

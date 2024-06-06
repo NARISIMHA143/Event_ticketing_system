@@ -23,8 +23,8 @@ def index(request):
         return redirect('register')  # or another appropriate view
     
     
-# def index(request):
-#     return render(request, "index.html")
+#def index(request):
+  #  return render(request, "index.html")
 
 def home(request):
     return render(request, "home.html")
